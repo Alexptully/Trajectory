@@ -1,0 +1,121 @@
+body {
+       background-color: #673c4f;
+   }
+   #outercontainer {
+       background-color: #7f557d;
+       border-radius: 9px;
+       padding:10px;
+       width: 90%; margin:auto;
+   }
+  
+   h1 { 
+           font-size: 28px;
+           text-align: center;
+
+
+   }
+   h2 {
+       font-size: 16px;
+       color: black;
+       text-align: center;
+   }
+
+
+   h3 {
+           font-size: 24px;
+           text-align: center;
+   }
+  
+   h4 {
+       font-size: 18px;
+       color: black;
+       text-align: left;
+   }
+
+
+   h5{
+       font-size: 22px;
+       color:aquamarine;
+       text-align: left;
+   }
+  
+   p {
+       width: 800px;
+       margin:auto;
+   }
+
+
+   #nav {
+       background-color: #9c6b9a ; 
+       width: 95%;
+       margin: 23px;
+       padding: 5px;
+       display: flex;
+       justify-content: flex-end;
+   }
+   .item {
+      
+       min-width: 100px;
+       text-align: center;
+       border: 1px solid white; margin: 5px; /* remove later, temp to show dimensions */
+       color:white;
+   }
+
+
+   #logos {
+       background-color: #9c6b9a;
+       text-align:center;
+       border-radius: 9px;
+       padding:12px;
+   }
+   .logo {
+       width: 125px;
+   }
+   .logolg {
+       width:90px;
+   }
+
+
+   dl {
+       width: 80%; margin:auto;
+       background-color: #575799;
+   }
+   dt {
+       background-color:#4F3044;
+       color:white;   
+   }
+  
+  
+
+
+   th {
+       background-color:steelblue;
+       position: relative;
+   }
+   .definition {
+       position:absolute; top:30px;
+       background-color: steelblue; color:white;
+   }
+
+
+   table {
+       background-color:lightsteelblue;
+       text-align:center;
+       margin:auto;
+   }
+
+
+   #links {
+       margin: 15px;
+       word-spacing: 15px;
+       text-decoration: none;
+   }
+
+
+   .highlight {
+       background-color: #7698b3;
+   }
+   .highlight2 {
+       background-color: #83b5d1;
+   }
+
