@@ -1,0 +1,399 @@
+/* ===== GENERAL ===== */
+body {
+	margin: 0;
+	font-family: "Inter", Arial, sans-serif;
+	color: #111111;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.section {
+	margin-top: 60px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* ===== BUTTONS ===== */
+.button-white {
+	display: inline-block;
+	background-color: white;
+	color: #111111;
+	padding: 10px 14px;
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.button-outline {
+	display: inline-block;
+	color: white;
+	border: 1px solid white;
+	padding: 9px 14px;
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 500;
+	margin-left: 8px;
+}
+
+.button-blue {
+	display: inline-block;
+	background-color: #0b48b8;
+	color: white;
+	padding: 11px 18px;
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.button-full {
+	display: block;
+	text-align: center;
+}
+
+/* ===== NAVIGATION ===== */
+#nav {
+	padding: 26px 0;
+	border-bottom: 1px solid #dddddd;
+}
+
+#logo {
+	float: left;
+	color: #0b48b8;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+#logo img {
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+#nav-links {
+	float: right;
+}
+
+#nav-links a {
+	color: #333333;
+	font-size: 13px;
+	margin-left: 34px;
+}
+
+#nav-links a:hover {
+	color: #0b48b8;
+}
+
+/* ===== HERO ===== */
+#hero {
+	background-color: #0b48b8;
+	color: white;
+	padding-top: 55px;
+}
+
+#hero-text {
+	float: left;
+	width: 400px;
+	padding-top: 20px;
+}
+
+#hero-text h1 {
+	font-size: 34px;
+	line-height: 1.2;
+	font-weight: 600;
+	margin: 0 0 30px 0;
+}
+
+#hero-text p {
+	font-size: 14px;
+	line-height: 1.4;
+	margin-bottom: 25px;
+}
+
+#hero-card {
+	float: right;
+	width: 320px;
+	background-color: white;
+	color: #111111;
+	padding: 25px 22px 35px 22px;
+	border-radius: 16px 16px 0 0;
+}
+
+.card-label {
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0 0 30px 0;
+}
+
+/* The gauge is a circle with a thick border. The bottom border is
+   transparent so it looks like an arch. */
+#gauge {
+	width: 210px;
+	height: 210px;
+	margin: 0 auto -45px auto;
+	border: 16px solid #9db5ea;
+	border-right-color: #0b48b8;
+	border-bottom-color: transparent;
+	border-radius: 50%;
+	text-align: center;
+}
+
+#gauge-score {
+	font-size: 54px;
+	font-weight: 800;
+	margin: 50px 0 0 0;
+}
+
+#gauge-note {
+	font-size: 11px;
+	color: #777777;
+	margin: 0;
+}
+
+.chip {
+	display: inline-block;
+	background-color: #e8eefb;
+	color: #0b48b8;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 6px 9px;
+	border-radius: 12px;
+	margin: 0 4px 8px 0;
+}
+
+.chip-off {
+	background-color: white;
+	color: #555555;
+	border: 1px solid #cccccc;
+	font-weight: 400;
+}
+
+/* ===== PURPOSE ===== */
+#purpose-text {
+	float: left;
+	width: 300px;
+	margin-left: 70px;
+	padding-top: 40px;
+}
+
+#purpose-text h2 {
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0 0 30px 0;
+}
+
+#purpose-image {
+	float: right;
+	width: 58%;
+}
+
+#purpose-image img {
+	width: 100%;
+	display: block;
+}
+
+/* ===== EXPLORE THE DATA ===== */
+#map-box {
+	float: left;
+	width: 490px;
+	text-align: center;
+	height: 330px;
+	background-color: #e8eefb;
+	border-radius: 12px;
+}
+
+#map-box img {
+	width: 404px;
+	height: 330px;
+}
+
+#explore-box {
+	float: right;
+	width: 424px;
+	height: 290px;
+	background-color: #f4f5f7;
+	border-radius: 12px;
+	padding: 20px 33px;
+}
+
+#explore-box h2 {
+	font-size: 34px;
+	line-height: 1.2;
+	font-weight: 700;
+	margin: 30px 0 20px 0;
+}
+
+#explore-box p {
+	font-size: 13px;
+	line-height: 1.6;
+	color: #555555;
+	margin-bottom: 30px;
+}
+
+/* ===== SIMULATOR PREVIEW ===== */
+#sim-title {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0 0 30px 0;
+}
+
+.step {
+	float: left;
+	width: 280px;
+	height: 290px;
+	border: 1px solid #e3e3e3;
+	border-radius: 8px;
+	padding: 20px;
+	margin-right: 15px;
+	font-size: 13px;
+}
+
+.step-last {
+	margin-right: 0;
+	border: 1px solid #0b48b8;
+}
+
+.step-label {
+	font-size: 10px;
+	font-weight: 600;
+	color: #444444;
+	margin: 0 0 12px 0;
+}
+
+.progress {
+	height: 4px;
+	background-color: #e3e3e3;
+	margin-bottom: 18px;
+}
+
+.progress-fill {
+	width: 35%;
+	height: 4px;
+	background-color: #0b48b8;
+}
+
+.question-count {
+	font-size: 10px;
+	color: #777777;
+}
+
+.question {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.answer {
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	padding: 7px 10px;
+	margin: 0 0 6px 0;
+	font-size: 12px;
+}
+
+.answer-picked {
+	border: 2px solid #0b48b8;
+	background-color: #f2f6fd;
+	color: #0b48b8;
+	font-weight: 600;
+}
+
+.habit {
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	padding: 8px;
+	margin: 0 0 8px 0;
+	font-size: 11px;
+	color: #444444;
+}
+
+.habit-on {
+	background-color: #f2f6fd;
+	font-weight: 600;
+	color: #111111;
+}
+
+.points {
+	float: right;
+	color: #0b48b8;
+	font-size: 10px;
+}
+
+#big-score {
+	font-size: 64px;
+	font-weight: 800;
+	color: #f2b631;
+	margin: 0;
+}
+
+/* The slider is a thin line with two dots placed on it. */
+#slider {
+	position: relative;
+	height: 2px;
+	background-color: #999999;
+	margin: 25px 0 10px 0;
+}
+
+#slider-start {
+	position: absolute;
+	left: 80px;
+	top: -5px;
+	width: 10px;
+	height: 10px;
+	background-color: #111111;
+	border: 1px solid #f2b631;
+	border-radius: 50%;
+}
+
+#slider-end {
+	position: absolute;
+	left: 150px;
+	top: -7px;
+	width: 16px;
+	height: 16px;
+	background-color: #f2b631;
+	border-radius: 50%;
+}
+
+#slider-note {
+	text-align: center;
+	font-size: 11px;
+}
+
+.small-note {
+	font-size: 10px;
+	color: #444444;
+	line-height: 1.5;
+	margin-bottom: 18px;
+}
+
+/* ===== BOTTOM BANNER ===== */
+#banner {
+	background-color: #0b48b8;
+	color: white;
+	padding: 60px 0 70px 0;
+	margin-top: 80px;
+}
+
+#banner h2 {
+	float: left;
+	width: 420px;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.3;
+	margin: 0;
+}
+
+#banner .button-white {
+	float: right;
+	margin-top: 15px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Trajectory | Home</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- NAVIGATION BAR -->
+	<div id="nav">
+		<div class="container">
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="Trajectory logo">Trajectory</a>
+			<div id="nav-links">
+				<a href="data.html">Data</a>
+				<a href="findings.html">Findings</a>
+				<a href="simulator.html">Simulator</a>
+				<a href="resources.html">Sources</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<!-- HERO SECTION -->
+	<div id="hero">
+		<div class="container">
+			<div id="hero-text">
+				<h1>Discovering the trends that accelerate growth in academia</h1>
+				<p>We follow every graduating class from its PSAT to its SAT across Connecticut's high-schools, learning what actually helped students grow.</p>
+				<a href="simulator.html" class="button-white">Try the Simulator</a>
+				<a href="data.html" class="button-outline">Explore the data</a>
+			</div>
+
+			<div id="hero-card">
+				<p class="card-label">Your projected SAT</p>
+				<div id="gauge">
+					<p id="gauge-score">1340</p>
+					<p id="gauge-note">up from 1180 on your diagnostic</p>
+				</div>
+				<span class="chip">&#10003; Khan Academy daily</span>
+				<span class="chip">&#10003; PSAT report review</span>
+				<br>
+				<span class="chip">&#10003; 4 practice tests</span>
+				<span class="chip chip-off">+ Study group</span>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<!-- PURPOSE AND ASSUMPTIONS SECTION -->
+	<div id="purpose">
+		<div id="purpose-text">
+			<h2>We're not looking for the highest scores, but the highest changes in growth.</h2>
+			<h2>We tracked the PSAT and SAT scores of graduating classes from 2016-2026 in Connecticut</h2>
+			<h2>We then derived the top patterns that are helping students achieve the highest growth.</h2>
+		</div>
+		<div id="purpose-image">
+			<img src="images/classroom.jpg" alt="Teacher in front of a classroom of students">
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<!-- EXPLORE THE DATA SECTION -->
+	<div class="container section">
+		<div id="map-box">
+			<img src="images/ct-map.png" alt="Map of Connecticut high schools">
+		</div>
+		<div id="explore-box">
+			<h2>Explore the Data and the Trends</h2>
+			<p>Filter by region, public or private, tuition and endowment, then follow any class from PSAT to SAT.</p>
+			<a href="data.html" class="button-blue">Explore Data &rarr;</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<!-- SIMULATOR PREVIEW SECTION -->
+	<div class="container section">
+		<h2 id="sim-title">Simulate your trajectory</h2>
+
+		<!-- Step 1 -->
+		<div class="step">
+			<p class="step-label">1 &middot; Take the simulated test</p>
+			<div class="progress"><div class="progress-fill"></div></div>
+			<p class="question-count">Question 7 of 20 &middot; Math</p>
+			<p class="question">If 3x + 7 = 22, what is the value of 6x &minus; 5?</p>
+			<p class="answer answer-picked">A &nbsp;25</p>
+			<p class="answer">B &nbsp;30</p>
+			<p class="answer">C &nbsp;35</p>
+			<p class="answer">D &nbsp;40</p>
+		</div>
+
+		<!-- Step 2 -->
+		<div class="step">
+			<p class="step-label">2 &middot; Apply what top schools did</p>
+			<p class="question">Pick the habits you'll commit to</p>
+			<p class="habit habit-on"><span class="points">+45</span><input type="checkbox" checked> Khan Academy &middot; 30 min a day</p>
+			<p class="habit habit-on"><span class="points">+25</span><input type="checkbox" checked> Review your PSAT score report</p>
+			<p class="habit"><span class="points">+15</span><input type="checkbox"> Weekly study group</p>
+			<p class="habit habit-on"><span class="points">+60</span><input type="checkbox" checked> 4 full-length practice tests</p>
+		</div>
+
+		<!-- Step 3 -->
+		<div class="step step-last">
+			<p class="step-label">3 &middot; See your projected SAT</p>
+			<p id="big-score">1310</p>
+			<p>Likely range 1270&ndash;1350</p>
+			<div id="slider">
+				<div id="slider-start"></div>
+				<div id="slider-end"></div>
+			</div>
+			<p id="slider-note">Diagnostic 1180 &nbsp;<b>+130</b></p>
+			<p class="small-note">Estimates are based on growth patterns at Connecticut's top-growth schools.</p>
+			<a href="simulator.html" class="button-blue button-full">Start the simulator</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<!-- BOTTOM BANNER -->
+	<div id="banner">
+		<div class="container">
+			<h2>See how your school's classes have grown.</h2>
+			<a href="data.html" class="button-white">Explore the Data</a>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</body>
+</html>
