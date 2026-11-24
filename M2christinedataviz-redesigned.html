@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Trajectory | Connecticut School Score Snapshot</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><style>
+:root{--navy:#172b4d;--blue:#2463a6;--blue2:#397fc0;--pale:#edf4fb;--ink:#243247;--muted:#62738a;--line:#dbe5ef;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f4f7fb;color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.6}
+a{color:var(--blue)}
+#nav{background:#fff;border-bottom:1px solid var(--line);position:relative;z-index:2}
+#nav .container{max-width:1180px;margin:auto;padding:14px 24px}
+#logo{display:inline-flex;align-items:center;gap:10px;color:var(--navy);font-weight:800;text-decoration:none;font-size:20px}
+#logo img{width:34px;height:34px;object-fit:contain}
+#nav-links{float:right;display:flex;gap:28px;padding-top:5px}
+#nav-links a{text-decoration:none;color:#53647b;font-size:14px;font-weight:600}
+#nav-links a:hover{color:var(--blue)}
+.clear{clear:both}
+#page-hero{background:linear-gradient(115deg,#17345c,#286da9);color:white;padding:54px 24px 48px}
+#page-hero .container{max-width:1180px;margin:auto}
+#page-hero .eyebrow{font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#c6def5;margin:0 0 10px}
+#page-hero h1{font-size:clamp(30px,4vw,46px);line-height:1.15;max-width:850px;margin:0 0 14px;color:#fff}
+#page-hero p{max-width:780px;margin:0;color:#e2edf8;font-size:16px}
+.page-wrap{max-width:1180px;margin:34px auto 70px;padding:0 24px}
+.content-panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:28px;box-shadow:0 8px 28px rgba(25,52,85,.05)}
+.content-panel h2,.content-panel h3{color:var(--navy);margin:0 0 16px}
+.content-panel p{max-width:900px;color:var(--muted)}
+.table-scroll{width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:760px;background:white;font-size:13px;text-align:left;margin:0}
+th{background:#e8f1fa;color:#203c60;font-weight:700;position:sticky;top:0;z-index:1}
+th,td{padding:11px 12px;border-bottom:1px solid #e5ebf2;vertical-align:top}
+tbody tr:nth-child(even){background:#f8fafc}
+tbody tr:hover{background:#eaf3fc}
+img{max-width:100%;height:auto}
+.sidebox{display:inline-block;vertical-align:top;width:calc(33.333% - 20px);margin:8px 8px 18px;padding:16px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 6px 20px rgba(25,52,85,.05);text-align:center}
+.sidebox img{width:100%;max-height:290px;object-fit:contain}
+figure{margin:0}
+footer{padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:760px){#nav .container{padding:12px 18px}#nav-links{float:none;clear:both;display:flex;flex-wrap:wrap;gap:16px;padding-top:14px}.page-wrap{padding:0 14px;margin-top:20px}.content-panel{padding:16px}#page-hero{padding:38px 18px}.sidebox{width:100%;margin:8px 0 16px}}
+</style></head><body><div id="nav"><div class="container"><a href="index.html" id="logo"><img alt="Trajectory logo" src="images/logo.png"/>Trajectory</a><div id="nav-links"><a href="data.html">Data</a><a href="findings.html">Findings</a><a href="simulator.html">Simulator</a><a href="resources.html">Sources</a></div><div class="clear"></div></div></div><section id="page-hero"><div class="container"><p class="eyebrow">Trajectory / Data exploration</p><h1>Connecticut School Score Snapshot</h1><p>A closer look at school-level PSAT and SAT averages alongside available AP coursework.</p></div></section><main class="page-wrap"><section class="content-panel"><h2>Dataset</h2><style>
+.tg{border-collapse:collapse}
+.tg td{border:0 solid black;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;text-align:left;
+  vertical-align:top;word-break:normal}
+.tg th{border:0 solid black;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;
+  text-align:left;vertical-align:top;word-break:normal}
+.tg .tg-nydc{border-width:1px;vertical-align:bottom}
+.tg .tg-ggee{border-width:1px;text-align:right;vertical-align:bottom}
+</style><div class="table-scroll"><table class="tg"><thead>
+<tr>
+<th class="tg-nydc">School</th>
+<th class="tg-nydc">PSAT11 Total Mean</th>
+<th class="tg-nydc">SAT Total Mean</th>
+<th class="tg-nydc">AP Courses Available</th>
+<th class="tg-nydc">SAT Total Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tg-nydc">Ansonia High School</td>
+<td class="tg-ggee">866</td>
+<td class="tg-ggee">905</td>
+<td class="tg-ggee">8</td>
+<td class="tg-ggee">905</td>
+</tr>
+<tr>
+<td class="tg-nydc">Emmett O'Brien Technical High School</td>
+<td class="tg-ggee">877</td>
+<td class="tg-ggee">903</td>
+<td class="tg-ggee">10</td>
+<td class="tg-ggee">1085</td>
+</tr>
+<tr>
+<td class="tg-nydc">Avon High School</td>
+<td class="tg-ggee">1148</td>
+<td class="tg-ggee">1197</td>
+<td class="tg-ggee">10</td>
+<td class="tg-ggee">927</td>
+</tr>
+<tr>
+<td class="tg-nydc">Woodland Regional High School</td>
+<td class="tg-ggee">1134</td>
+<td class="tg-ggee">1085</td>
+<td class="tg-ggee">4</td>
+<td class="tg-ggee">772</td>
+</tr>
+<tr>
+<td class="tg-nydc">Berlin High School</td>
+<td class="tg-ggee">1028</td>
+<td class="tg-ggee">1079</td>
+<td class="tg-ggee">15</td>
+<td class="tg-ggee">995</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bethel High School</td>
+<td class="tg-ggee">1018</td>
+<td class="tg-ggee">1060</td>
+<td class="tg-ggee">16</td>
+<td class="tg-ggee">1000</td>
+</tr>
+<tr>
+<td class="tg-nydc">Academy of International Studies 6-12</td>
+<td class="tg-ggee">914</td>
+<td class="tg-ggee">943</td>
+<td class="tg-ggee">24</td>
+<td class="tg-ggee">1111</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bloomfield High School</td>
+<td class="tg-ggee">900</td>
+<td class="tg-ggee">927</td>
+<td class="tg-ggee">10</td>
+<td class="tg-ggee">1096</td>
+</tr>
+<tr>
+<td class="tg-nydc">Global Experience Magnet School</td>
+<td class="tg-ggee">931</td>
+<td class="tg-ggee">902</td>
+<td class="tg-ggee">13</td>
+<td class="tg-ggee">1126</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bolton High School</td>
+<td class="tg-ggee">1018</td>
+<td class="tg-ggee">1055</td>
+<td class="tg-ggee">29</td>
+<td class="tg-ggee">1148</td>
+</tr>
+<tr>
+<td class="tg-nydc">Branford High School</td>
+<td class="tg-ggee">1009</td>
+<td class="tg-ggee">1064</td>
+<td class="tg-ggee">6</td>
+<td class="tg-ggee">1040</td>
+</tr>
+<tr>
+<td class="tg-nydc">Aerospace/Hydrospace, Engineering and Physical Sciences Magnet High School</td>
+<td class="tg-ggee">914</td>
+<td class="tg-ggee">945</td>
+<td class="tg-ggee">26</td>
+<td class="tg-ggee">1257</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bassick High School</td>
+<td class="tg-ggee">749</td>
+<td class="tg-ggee">772</td>
+<td class="tg-ggee">10</td>
+<td class="tg-ggee">900</td>
+</tr>
+<tr>
+<td class="tg-nydc">Biotechnology, Research &amp; Zoological Studies Magnet High School</td>
+<td class="tg-ggee">961</td>
+<td class="tg-ggee">985</td>
+<td class="tg-ggee">11</td>
+<td class="tg-ggee">1104</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bridgeport Military Academy</td>
+<td class="tg-ggee">749</td>
+<td class="tg-ggee">785</td>
+<td class="tg-ggee">10</td>
+<td class="tg-ggee">1084</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bullard-Havens Technical High School</td>
+<td class="tg-ggee">827</td>
+<td class="tg-ggee">863</td>
+<td class="tg-ggee">12</td>
+<td class="tg-ggee">1059</td>
+</tr>
+<tr>
+<td class="tg-nydc">Capital Preparatory Harbor School</td>
+<td class="tg-ggee">903</td>
+<td class="tg-ggee">927</td>
+<td class="tg-ggee">8</td>
+<td class="tg-ggee">910</td>
+</tr>
+<tr>
+<td class="tg-nydc">Central High School</td>
+<td class="tg-ggee">859</td>
+<td class="tg-ggee">868</td>
+<td class="tg-ggee">19</td>
+<td class="tg-ggee">1105</td>
+</tr>
+<tr>
+<td class="tg-nydc">Information Technology &amp; Software Engineering Magnet High School</td>
+<td class="tg-ggee">901</td>
+<td class="tg-ggee">943</td>
+<td class="tg-ggee">11</td>
+<td class="tg-ggee">970</td>
+</tr>
+<tr>
+<td class="tg-nydc">The Bridge Academy</td>
+<td class="tg-ggee">828</td>
+<td class="tg-ggee">872</td>
+<td class="tg-ggee">21</td>
+<td class="tg-ggee">1016</td>
+</tr>
+<tr>
+<td class="tg-nydc">Warren Harding High School</td>
+<td class="tg-ggee">717</td>
+<td class="tg-ggee">768</td>
+<td class="tg-ggee">22</td>
+<td class="tg-ggee">1180</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bristol Central High School</td>
+<td class="tg-ggee">935</td>
+<td class="tg-ggee">995</td>
+<td class="tg-ggee">27</td>
+<td class="tg-ggee">1173</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bristol Eastern High School</td>
+<td class="tg-ggee">964</td>
+<td class="tg-ggee">1000</td>
+<td class="tg-ggee">23</td>
+<td class="tg-ggee">1135</td>
+</tr>
+<tr>
+<td class="tg-nydc">Brookfield High School</td>
+<td class="tg-ggee">1033</td>
+<td class="tg-ggee">1111</td>
+<td class="tg-ggee">35</td>
+<td class="tg-ggee">1174</td>
+</tr>
+<tr>
+<td class="tg-nydc">Lewis S. Mills High School</td>
+<td class="tg-ggee">1033</td>
+<td class="tg-ggee">1096</td>
+<td class="tg-ggee">17</td>
+<td class="tg-ggee">1164</td>
+</tr>
+<tr>
+<td class="tg-nydc">Plainfield High School</td>
+<td class="tg-ggee">891</td>
+<td class="tg-ggee">917</td>
+<td class="tg-ggee">3</td>
+<td class="tg-ggee">932</td>
+</tr>
+<tr>
+<td class="tg-nydc">Parish Hill Middle/High School</td>
+<td class="tg-ggee">986</td>
+<td class="tg-ggee">1063</td>
+<td class="tg-ggee">14</td>
+<td class="tg-ggee">1107</td>
+</tr>
+<tr>
+<td class="tg-nydc">Cheshire High School</td>
+<td class="tg-ggee">1086</td>
+<td class="tg-ggee">1148</td>
+<td class="tg-ggee">11</td>
+<td class="tg-ggee">1032</td>
+</tr>
+<tr>
+<td class="tg-nydc">The Morgan School</td>
+<td class="tg-ggee">974</td>
+<td class="tg-ggee">1040</td>
+<td class="tg-ggee">10</td>
+<td class="tg-ggee">1031</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bacon Academy</td>
+<td class="tg-ggee">1066</td>
+<td class="tg-ggee">1047</td>
+<td class="tg-ggee">18</td>
+<td class="tg-ggee">1175</td>
+</tr>
+<tr>
+<td class="tg-nydc">Coventry High School</td>
+<td class="tg-ggee">1028</td>
+<td class="tg-ggee">1077</td>
+<td class="tg-ggee">14</td>
+<td class="tg-ggee">891</td>
+</tr>
+<tr>
+<td class="tg-nydc">Cromwell High School</td>
+<td class="tg-ggee">1012</td>
+<td class="tg-ggee">1065</td>
+<td class="tg-ggee">5</td>
+<td class="tg-ggee">947</td>
+</tr>
+<tr>
+<td class="tg-nydc">Alternative Center for Excellence</td>
+<td class="tg-ggee">756</td>
+<td class="tg-ggee">827</td>
+<td class="tg-ggee">14</td>
+<td class="tg-ggee">857</td>
+</tr>
+<tr>
+<td class="tg-nydc">Danbury High School</td>
+<td class="tg-ggee">913</td>
+<td class="tg-ggee">955</td>
+<td class="tg-ggee">29</td>
+<td class="tg-ggee">1244</td>
+</tr>
+<tr>
+<td class="tg-nydc">Henry Abbott Technical High School</td>
+<td class="tg-ggee">887</td>
+<td class="tg-ggee">913</td>
+<td class="tg-ggee">3</td>
+<td class="tg-ggee">865</td>
+</tr>
+<tr>
+<td class="tg-nydc">H. H. Ellis Technical High School</td>
+<td class="tg-ggee">895</td>
+<td class="tg-ggee">909</td>
+<td class="tg-ggee">15</td>
+<td class="tg-ggee">843</td>
+</tr>
+<tr>
+<td class="tg-nydc">Quinebaug Middle College</td>
+<td class="tg-ggee">870</td>
+<td class="tg-ggee">898</td>
+<td class="tg-ggee">7</td>
+<td class="tg-ggee">1026</td>
+</tr>
+<tr>
+<td class="tg-nydc">Darien High School</td>
+<td class="tg-ggee">1194</td>
+<td class="tg-ggee">1257</td>
+<td class="tg-ggee">16</td>
+<td class="tg-ggee">1033</td>
+</tr>
+<tr>
+<td class="tg-nydc">Killingly High School</td>
+<td class="tg-ggee">929</td>
+<td class="tg-ggee">991</td>
+<td class="tg-ggee">12</td>
+<td class="tg-ggee">1120</td>
+</tr>
+<tr>
+<td class="tg-nydc">Valley Regional High School</td>
+<td class="tg-ggee">1054</td>
+<td class="tg-ggee">1106</td>
+<td class="tg-ggee">15</td>
+<td class="tg-ggee">989</td>
+</tr>
+<tr>
+<td class="tg-nydc">Derby High School</td>
+<td class="tg-ggee">842</td>
+<td class="tg-ggee">900</td>
+<td class="tg-ggee">9</td>
+<td class="tg-ggee">1004</td>
+</tr>
+<tr>
+<td class="tg-nydc">Coginchaug Regional High School</td>
+<td class="tg-ggee">1036</td>
+<td class="tg-ggee">1104</td>
+<td class="tg-ggee">17</td>
+<td class="tg-ggee">1167</td>
+</tr>
+<tr>
+<td class="tg-nydc">East Granby High School</td>
+<td class="tg-ggee">1042</td>
+<td class="tg-ggee">1084</td>
+<td class="tg-ggee">16</td>
+<td class="tg-ggee">1016</td>
+</tr>
+<tr>
+<td class="tg-nydc">East Hampton High School</td>
+<td class="tg-ggee">1019</td>
+<td class="tg-ggee">1059</td>
+<td class="tg-ggee">11</td>
+<td class="tg-ggee">1031</td>
+</tr>
+<tr>
+<td class="tg-nydc">Connecticut IB Academy</td>
+<td class="tg-ggee">1055</td>
+<td class="tg-ggee">1128</td>
+<td class="tg-ggee">7</td>
+<td class="tg-ggee">921</td>
+</tr>
+<tr>
+<td class="tg-nydc">Connecticut River Academy at Goodwin University</td>
+<td class="tg-ggee">895</td>
+<td class="tg-ggee">937</td>
+<td class="tg-ggee">15</td>
+<td class="tg-ggee">1019</td>
+</tr>
+<tr>
+<td class="tg-nydc">East Hartford High School</td>
+<td class="tg-ggee">843</td>
+<td class="tg-ggee">891</td>
+<td class="tg-ggee">16</td>
+<td class="tg-ggee">1071</td>
+</tr>
+<tr>
+<td class="tg-nydc">Pathways Academy of Technology and Design</td>
+<td class="tg-ggee">912</td>
+<td class="tg-ggee">953</td>
+<td class="tg-ggee">12</td>
+<td class="tg-ggee">1076</td>
+</tr>
+<tr>
+<td class="tg-nydc">East Haven High School</td>
+<td class="tg-ggee">879</td>
+<td class="tg-ggee">910</td>
+<td class="tg-ggee">18</td>
+<td class="tg-ggee">1081</td>
+</tr>
+<tr>
+<td class="tg-nydc">East Lyme High School</td>
+<td class="tg-ggee">1053</td>
+<td class="tg-ggee">1105</td>
+<td class="tg-ggee">13</td>
+<td class="tg-ggee">1045</td>
+</tr>
+<tr>
+<td class="tg-nydc">East Windsor High School</td>
+<td class="tg-ggee">929</td>
+<td class="tg-ggee">970</td>
+<td class="tg-ggee">13</td>
+<td class="tg-ggee">1074</td>
+</tr>
+<tr>
+<td class="tg-nydc">Ellington High School</td>
+<td class="tg-ggee">1002</td>
+<td class="tg-ggee">1065</td>
+<td class="tg-ggee">23</td>
+<td class="tg-ggee">979</td>
+</tr>
+<tr>
+<td class="tg-nydc">Enfield High School</td>
+<td class="tg-ggee">966</td>
+<td class="tg-ggee">1016</td>
+<td class="tg-ggee">14</td>
+<td class="tg-ggee">977</td>
+</tr>
+<tr>
+<td class="tg-nydc">Fairfield Ludlowe High School</td>
+<td class="tg-ggee">1112</td>
+<td class="tg-ggee">1180</td>
+<td class="tg-ggee">9</td>
+<td class="tg-ggee">937</td>
+</tr>
+<tr>
+<td class="tg-nydc">Housatonic Valley Regional High School</td>
+<td class="tg-ggee">989</td>
+<td class="tg-ggee">1017</td>
+<td class="tg-ggee">9</td>
+<td class="tg-ggee">994</td>
+</tr>
+<tr>
+<td class="tg-nydc">Farmington High School</td>
+<td class="tg-ggee">1059</td>
+<td class="tg-ggee">1173</td>
+<td class="tg-ggee">7</td>
+<td class="tg-ggee">1030</td>
+</tr>
+<tr>
+<td class="tg-nydc">Glastonbury High School</td>
+<td class="tg-ggee">1160</td>
+<td class="tg-ggee">1176</td>
+<td class="tg-ggee">10</td>
+<td class="tg-ggee">1134</td>
+</tr>
+<tr>
+<td class="tg-nydc">Granby Memorial High School</td>
+<td class="tg-ggee">1066</td>
+<td class="tg-ggee">1135</td>
+<td class="tg-ggee">4</td>
+<td class="tg-ggee">951</td>
+</tr>
+<tr>
+<td class="tg-nydc">Greenwich High School</td>
+<td class="tg-ggee">1116</td>
+<td class="tg-ggee">1174</td>
+<td class="tg-ggee">14</td>
+<td class="tg-ggee">1033</td>
+</tr>
+<tr>
+<td class="tg-nydc">Griswold High School</td>
+<td class="tg-ggee">939</td>
+<td class="tg-ggee">966</td>
+<td class="tg-ggee">9</td>
+<td class="tg-ggee">1047</td>
+</tr>
+<tr>
+<td class="tg-nydc">Ella T. Grasso Technical High School</td>
+<td class="tg-ggee">859</td>
+<td class="tg-ggee">894</td>
+<td class="tg-ggee">2</td>
+<td class="tg-ggee">783</td>
+</tr>
+<tr>
+<td class="tg-nydc">Marine Science Magnet High School</td>
+<td class="tg-ggee">1069</td>
+<td class="tg-ggee">1138</td>
+<td class="tg-ggee">7</td>
+<td class="tg-ggee">828</td>
+</tr>
+<tr>
+<td class="tg-nydc">Robert E. Fitch High School</td>
+<td class="tg-ggee">974</td>
+<td class="tg-ggee">1019</td>
+<td class="tg-ggee">8</td>
+<td class="tg-ggee">937</td>
+</tr>
+<tr>
+<td class="tg-nydc">Guilford High School</td>
+<td class="tg-ggee">1125</td>
+<td class="tg-ggee">1164</td>
+<td class="tg-ggee">3</td>
+<td class="tg-ggee">962</td>
+</tr>
+<tr>
+<td class="tg-nydc">Eli Whitney Technical High School</td>
+<td class="tg-ggee">793</td>
+<td class="tg-ggee">823</td>
+<td class="tg-ggee">14</td>
+<td class="tg-ggee">1046</td>
+</tr>
+<tr>
+<td class="tg-nydc">Hamden High School</td>
+<td class="tg-ggee">954</td>
+<td class="tg-ggee">986</td>
+<td class="tg-ggee">13</td>
+<td class="tg-ggee">916</td>
+</tr>
+<tr>
+<td class="tg-nydc">A. I. Prince Technical High School</td>
+<td class="tg-ggee">826</td>
+<td class="tg-ggee">837</td>
+<td class="tg-ggee">18</td>
+<td class="tg-ggee">1091</td>
+</tr>
+<tr>
+<td class="tg-nydc">Achievement First Hartford Academy</td>
+<td class="tg-ggee">919</td>
+<td class="tg-ggee">961</td>
+<td class="tg-ggee">18</td>
+<td class="tg-ggee">1220</td>
+</tr>
+<tr>
+<td class="tg-nydc">Bulkeley High School</td>
+<td class="tg-ggee">739</td>
+<td class="tg-ggee">691</td>
+<td class="tg-ggee">29</td>
+<td class="tg-ggee">1220</td>
+</tr>
+<tr>
+<td class="tg-nydc">Capital Preparatory Magnet School</td>
+<td class="tg-ggee">856</td>
+<td class="tg-ggee">865</td>
+<td class="tg-ggee">12</td>
+<td class="tg-ggee">951</td>
+</tr>
+<tr>
+<td class="tg-nydc">Classical Magnet School</td>
+<td class="tg-ggee">891</td>
+<td class="tg-ggee">929</td>
+<td class="tg-ggee">12</td>
+<td class="tg-ggee">1056</td>
+</tr>
+<tr>
+<td class="tg-nydc">Global Communications Academy</td>
+<td class="tg-ggee">774</td>
+<td class="tg-ggee">848</td>
+<td class="tg-ggee">15</td>
+<td class="tg-ggee">1145</td>
+</tr>
+<tr>
+<td class="tg-nydc">Greater Hartford Academy of the Arts High School - Full Day</td>
+<td class="tg-ggee">906</td>
+<td class="tg-ggee">932</td>
+<td class="tg-ggee">21</td>
+<td class="tg-ggee">1040</td>
+</tr>
+<tr>
+<td class="tg-nydc">Hartford Magnet Trinity College Academy</td>
+<td class="tg-ggee">914</td>
+<td class="tg-ggee">949</td>
+<td class="tg-ggee">22</td>
+<td class="tg-ggee">1064</td>
+</tr>
+<tr>
+<td class="tg-nydc">Hartford Public High School – Engineering &amp; Green Technology Academy</td>
+<td class="tg-ggee">740</td>
+<td class="tg-ggee">799</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Hartford Public High School – Insurance &amp; Finance Academy</td>
+<td class="tg-ggee">728</td>
+<td class="tg-ggee">712</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Hartford Public High School – Nursing Academy</td>
+<td class="tg-ggee">730</td>
+<td class="tg-ggee">737</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Kinsella Magnet School of Performing Arts: High School Campus</td>
+<td class="tg-ggee">844</td>
+<td class="tg-ggee">877</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Sport and Medical Sciences Academy</td>
+<td class="tg-ggee">888</td>
+<td class="tg-ggee">937</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">University High School of Science and Engineering</td>
+<td class="tg-ggee">1054</td>
+<td class="tg-ggee">1120</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">RHAM High School</td>
+<td class="tg-ggee">1116</td>
+<td class="tg-ggee">1157</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Haddam-Killingworth High School</td>
+<td class="tg-ggee">1057</td>
+<td class="tg-ggee">1107</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Lyman Memorial High School</td>
+<td class="tg-ggee">1004</td>
+<td class="tg-ggee">1032</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Ledyard High School</td>
+<td class="tg-ggee">968</td>
+<td class="tg-ggee">1021</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Litchfield High School</td>
+<td class="tg-ggee">1086</td>
+<td class="tg-ggee">1097</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Wamogo Regional High School</td>
+<td class="tg-ggee">990</td>
+<td class="tg-ggee">1031</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Daniel Hand High School</td>
+<td class="tg-ggee">1147</td>
+<td class="tg-ggee">1175</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Great Path Academy at CT State Manchester</td>
+<td class="tg-ggee">870</td>
+<td class="tg-ggee">927</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Howell Cheney Technical High School</td>
+<td class="tg-ggee">866</td>
+<td class="tg-ggee">891</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Manchester High School</td>
+<td class="tg-ggee">925</td>
+<td class="tg-ggee">965</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Francis T. Maloney High School</td>
+<td class="tg-ggee">860</td>
+<td class="tg-ggee">891</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">H. C. Wilcox Technical High School</td>
+<td class="tg-ggee">901</td>
+<td class="tg-ggee">935</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Orville H. Platt High School</td>
+<td class="tg-ggee">838</td>
+<td class="tg-ggee">882</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Middletown High School</td>
+<td class="tg-ggee">925</td>
+<td class="tg-ggee">978</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Vinal Technical High School</td>
+<td class="tg-ggee">848</td>
+<td class="tg-ggee">882</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Joseph A. Foran High School</td>
+<td class="tg-ggee">1004</td>
+<td class="tg-ggee">1061</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Platt Technical High School</td>
+<td class="tg-ggee">866</td>
+<td class="tg-ggee">889</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Masuk High School</td>
+<td class="tg-ggee">1074</td>
+<td class="tg-ggee">1139</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Nathan Hale-Ray High School</td>
+<td class="tg-ggee">990</td>
+<td class="tg-ggee">1051</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Naugatuck High School</td>
+<td class="tg-ggee">915</td>
+<td class="tg-ggee">922</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Academy of Science and Innovation</td>
+<td class="tg-ggee">925</td>
+<td class="tg-ggee">947</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">E. C. Goodwin Technical High School</td>
+<td class="tg-ggee">830</td>
+<td class="tg-ggee">844</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">New Britain High School</td>
+<td class="tg-ggee">808</td>
+<td class="tg-ggee">857</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">New Canaan High School</td>
+<td class="tg-ggee">1173</td>
+<td class="tg-ggee">1244</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">New Fairfield High School</td>
+<td class="tg-ggee">1043</td>
+<td class="tg-ggee">1079</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Amistad Academy</td>
+<td class="tg-ggee">899</td>
+<td class="tg-ggee">974</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Common Ground High School</td>
+<td class="tg-ggee">784</td>
+<td class="tg-ggee">865</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Cooperative High School - Inter-District Magnet</td>
+<td class="tg-ggee">858</td>
+<td class="tg-ggee">892</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">High School In The Community</td>
+<td class="tg-ggee">809</td>
+<td class="tg-ggee">829</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Highville Charter School</td>
+<td class="tg-ggee">765</td>
+<td class="tg-ggee">848</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Hill Regional Career High School</td>
+<td class="tg-ggee">857</td>
+<td class="tg-ggee">876</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">James Hillhouse High School</td>
+<td class="tg-ggee">775</td>
+<td class="tg-ggee">792</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Metropolitan Business Academy</td>
+<td class="tg-ggee">841</td>
+<td class="tg-ggee">871</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">New Haven Academy</td>
+<td class="tg-ggee">871</td>
+<td class="tg-ggee">907</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Sound School</td>
+<td class="tg-ggee">921</td>
+<td class="tg-ggee">965</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Wilbur Cross High School</td>
+<td class="tg-ggee">820</td>
+<td class="tg-ggee">843</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">New London High School</td>
+<td class="tg-ggee">764</td>
+<td class="tg-ggee">818</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Science and Technology Magnet Pathway for High School Grades</td>
+<td class="tg-ggee">968</td>
+<td class="tg-ggee">991</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">New Milford High School</td>
+<td class="tg-ggee">1014</td>
+<td class="tg-ggee">1068</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Newington High School</td>
+<td class="tg-ggee">1013</td>
+<td class="tg-ggee">1073</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">North Branford High School</td>
+<td class="tg-ggee">972</td>
+<td class="tg-ggee">1026</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Tourtellotte Memorial High School</td>
+<td class="tg-ggee">937</td>
+<td class="tg-ggee">975</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">North Haven High School</td>
+<td class="tg-ggee">989</td>
+<td class="tg-ggee">1033</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Wheeler High School</td>
+<td class="tg-ggee">1065</td>
+<td class="tg-ggee">1120</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Brien McMahon High School</td>
+<td class="tg-ggee">909</td>
+<td class="tg-ggee">961</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Center for Global Studies</td>
+<td class="tg-ggee">1076</td>
+<td class="tg-ggee">1094</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Norwich Free Academy</td>
+<td class="tg-ggee">950</td>
+<td class="tg-ggee">989</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Norwich Technical High School</td>
+<td class="tg-ggee">898</td>
+<td class="tg-ggee">921</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Three Rivers Middle College Magnet School</td>
+<td class="tg-ggee">986</td>
+<td class="tg-ggee">1021</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Montville High School</td>
+<td class="tg-ggee">938</td>
+<td class="tg-ggee">1004</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Lyme-Old Lyme High School</td>
+<td class="tg-ggee">1128</td>
+<td class="tg-ggee">1167</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Old Saybrook Senior High School</td>
+<td class="tg-ggee">1007</td>
+<td class="tg-ggee">1085</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Oxford High School</td>
+<td class="tg-ggee">985</td>
+<td class="tg-ggee">1016</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Stonington High School</td>
+<td class="tg-ggee">1058</td>
+<td class="tg-ggee">1098</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Plainville High School</td>
+<td class="tg-ggee">974</td>
+<td class="tg-ggee">1004</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Portland High School</td>
+<td class="tg-ggee">1005</td>
+<td class="tg-ggee">1031</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Putnam High School</td>
+<td class="tg-ggee">905</td>
+<td class="tg-ggee">921</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Joel Barlow High School</td>
+<td class="tg-ggee">1137</td>
+<td class="tg-ggee">1192</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Ridgefield High School</td>
+<td class="tg-ggee">1177</td>
+<td class="tg-ggee">1230</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Rocky Hill High School</td>
+<td class="tg-ggee">993</td>
+<td class="tg-ggee">1056</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Newtown High School</td>
+<td class="tg-ggee">1108</td>
+<td class="tg-ggee">1158</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Seymour High School</td>
+<td class="tg-ggee">978</td>
+<td class="tg-ggee">1019</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Shelton High School</td>
+<td class="tg-ggee">1071</td>
+<td class="tg-ggee">1071</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Simsbury High School</td>
+<td class="tg-ggee">1114</td>
+<td class="tg-ggee">1175</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Somers High School</td>
+<td class="tg-ggee">1046</td>
+<td class="tg-ggee">1076</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">South Windsor High School</td>
+<td class="tg-ggee">1055</td>
+<td class="tg-ggee">1121</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Pomperaug Regional High School</td>
+<td class="tg-ggee">1078</td>
+<td class="tg-ggee">1139</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Southington High School</td>
+<td class="tg-ggee">1027</td>
+<td class="tg-ggee">1081</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Stafford High School</td>
+<td class="tg-ggee">981</td>
+<td class="tg-ggee">1045</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Stamford High School</td>
+<td class="tg-ggee">939</td>
+<td class="tg-ggee">984</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">The Academy of Information, Technology &amp; Engineering</td>
+<td class="tg-ggee">1002</td>
+<td class="tg-ggee">1074</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Westhill High School</td>
+<td class="tg-ggee">943</td>
+<td class="tg-ggee">979</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">E. O. Smith High School</td>
+<td class="tg-ggee">1213</td>
+<td class="tg-ggee">1142</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Bunnell High School</td>
+<td class="tg-ggee">928</td>
+<td class="tg-ggee">977</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Stratford High School</td>
+<td class="tg-ggee">905</td>
+<td class="tg-ggee">937</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Terryville High School</td>
+<td class="tg-ggee">955</td>
+<td class="tg-ggee">994</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Thomaston High School</td>
+<td class="tg-ggee">1000</td>
+<td class="tg-ggee">1030</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Tolland High School</td>
+<td class="tg-ggee">1061</td>
+<td class="tg-ggee">1134</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Oliver Wolcott Technical High School</td>
+<td class="tg-ggee">880</td>
+<td class="tg-ggee">903</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Torrington High School</td>
+<td class="tg-ggee">901</td>
+<td class="tg-ggee">951</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Trumbull High School</td>
+<td class="tg-ggee">1078</td>
+<td class="tg-ggee">1145</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Rockville High School</td>
+<td class="tg-ggee">943</td>
+<td class="tg-ggee">999</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Lyman Hall High School</td>
+<td class="tg-ggee">983</td>
+<td class="tg-ggee">1033</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Mark T. Sheehan High School</td>
+<td class="tg-ggee">983</td>
+<td class="tg-ggee">1047</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Shepaug Valley School</td>
+<td class="tg-ggee">1057</td>
+<td class="tg-ggee">1106</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Crosby High School</td>
+<td class="tg-ggee">760</td>
+<td class="tg-ggee">783</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">John F. Kennedy High School</td>
+<td class="tg-ggee">796</td>
+<td class="tg-ggee">828</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">W. F. Kaynor Technical High School</td>
+<td class="tg-ggee">934</td>
+<td class="tg-ggee">947</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Waterbury Arts Magnet School</td>
+<td class="tg-ggee">893</td>
+<td class="tg-ggee">937</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Waterbury Career Academy</td>
+<td class="tg-ggee">920</td>
+<td class="tg-ggee">962</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Wilby High School</td>
+<td class="tg-ggee">742</td>
+<td class="tg-ggee">782</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Waterford High School</td>
+<td class="tg-ggee">1095</td>
+<td class="tg-ggee">1046</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Watertown High School</td>
+<td class="tg-ggee">957</td>
+<td class="tg-ggee">985</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Conard High School</td>
+<td class="tg-ggee">1082</td>
+<td class="tg-ggee">1122</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Hall High School</td>
+<td class="tg-ggee">1098</td>
+<td class="tg-ggee">1152</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">West Haven High School</td>
+<td class="tg-ggee">873</td>
+<td class="tg-ggee">916</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Suffield High School</td>
+<td class="tg-ggee">1039</td>
+<td class="tg-ggee">1091</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Westbrook High School</td>
+<td class="tg-ggee">1055</td>
+<td class="tg-ggee">1076</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Staples High School</td>
+<td class="tg-ggee">1184</td>
+<td class="tg-ggee">1241</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Wethersfield High School</td>
+<td class="tg-ggee">996</td>
+<td class="tg-ggee">1049</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Arts at the Capitol Theater Magnet School (ACT)</td>
+<td class="tg-ggee">928</td>
+<td class="tg-ggee">938</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Windham High School</td>
+<td class="tg-ggee">807</td>
+<td class="tg-ggee">853</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Windham Technical High School</td>
+<td class="tg-ggee">856</td>
+<td class="tg-ggee">875</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Wilton High School</td>
+<td class="tg-ggee">1164</td>
+<td class="tg-ggee">1220</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Academy of Aerospace and Engineering</td>
+<td class="tg-ggee">1019</td>
+<td class="tg-ggee">1081</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Windsor High School</td>
+<td class="tg-ggee">905</td>
+<td class="tg-ggee">963</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Windsor Locks High School</td>
+<td class="tg-ggee">925</td>
+<td class="tg-ggee">951</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Explorations</td>
+<td class="tg-ggee">837</td>
+<td class="tg-ggee">880</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Northwestern Regional High School</td>
+<td class="tg-ggee">1067</td>
+<td class="tg-ggee">1127</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">The Gilbert School</td>
+<td class="tg-ggee">912</td>
+<td class="tg-ggee">962</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Wolcott High School</td>
+<td class="tg-ggee">999</td>
+<td class="tg-ggee">1056</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Amity Regional High School</td>
+<td class="tg-ggee">1087</td>
+<td class="tg-ggee">1145</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">Nonnewaug High School</td>
+<td class="tg-ggee">992</td>
+<td class="tg-ggee">1040</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+<tr>
+<td class="tg-nydc">The Woodstock Academy</td>
+<td class="tg-ggee">1008</td>
+<td class="tg-ggee">1064</td>
+<td class="tg-nydc"></td>
+<td class="tg-nydc"></td>
+</tr>
+</tbody>
+</table></div><div class="sidebox">
+<img src="SAT Total Mean vs. AP Courses Available.png"/>
+<br/>
+   Figure 1.1
+   
+</div><div class="sidebox">
+<img src="SAT Total Mean vs. PSAT Grade 11 Total Mean.png"/>
+<br/>
+   Figure 1.2
+   
+</div><div class="sidebox">
+<img src="School year Tested vs ERW mean.png"/>
+<br/>
+   Figure 1.3
+   
+</div><footer>
+<p> </p>
+</footer><script src="https://code.jquery.com/jquery.js"></script><script>
+      $(document).ready(function(){
+          $(".definition").hide();
+      });
+
+
+
+
+      
+    
+  // on load collapse stats table hide the after row 3 and
+   // when you mouseover a logo, make it bigger, when you mouse out change it back
+  $(".logo").on("mouseover", function(){
+    $(this).addClass("logolg");
+  })
+  $(".logo").on("mouseout", function(){
+    $(this).removeClass("logolg");
+  })
+   // when you click on a logo, toggle the logolg class to the NEXT logo
+  $(".logo").on("click", function(){
+    $(this).next().toggleClass("logolg");
+  })
+        
+   $(".definition").hide()
+    
+     
+
+
+
+
+      $("tr").on("mouseover", function(){
+          $(this).addClass("highlight2");
+          });
+
+
+
+
+      $("tr").on("mouseout", function(){
+          $(this).removeClass("highlight2");
+      });
+
+
+       </script></section></main></body></html>
